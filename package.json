@@ -2,8 +2,10 @@
   "name": "backend_GIS",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "start.js",
   "scripts": {
+    "start": "node start.js",
+    "dev": "nodemon start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

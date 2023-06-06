@@ -1,8 +1,8 @@
 const conn = require('../db/connection');
+const sqlStm = require('../common/SQLStatement');
 
 function getRoleUsers(req, res) {
-	var sqlStatement = "SELECT * FROM role";
-	conn.query(sqlStatement, function (err, result) {
+	conn.query(sqlStm.getRoleUsers, function (err, result) {
 		if (err) throw err;
 		res.send(result);
 	})
